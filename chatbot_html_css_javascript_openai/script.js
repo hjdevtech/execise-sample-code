@@ -110,6 +110,8 @@ chatbotCloseBtn.addEventListener("click", () => {
 });
 
 chatInput.addEventListener("input", () => {
+    test()
+    
     chatInput.style.height = inputInitHeight + "px";
     chatInput.style.height = chatInput.scrollHeight + "px";
 });
@@ -126,3 +128,18 @@ chatInput.addEventListener("keyup", (e) => {
         handleChat();
     }
 });
+
+
+function test() {
+    let s = "hello world";
+    let a = s.split(" ");
+    console.log(a);
+
+    s = "hello \nworld";
+    a = s.split("\n");
+    console.log(a);
+
+    s = "hello \n world \n";
+    a = s.split("\n");
+    console.log(a);
+}
